@@ -41,17 +41,38 @@ const App = () => {
 
  <ScrollView>
  <View style={styles.container}>
-      <Text style={styles.paragraph}>
+      <Text style={
+              // Argument -- Inside of a Style Tag
+            number === 1
+              ? styles.paragraph
+              : number === 2
+              ? styles.paragraphred
+              : styles.paragraphgreen
+          }>
         Change code in the editor and watch it change on your phone! Save to get a shareable url.
       </Text>
     </View>
      <View style={styles.container2}>
-      <Text style={styles.paragraph}>
+      <Text style={
+              // Argument -- Inside of a Style Tag
+            number === 1
+              ? styles.paragraph
+              : number === 2
+              ? styles.paragraphblue
+              : styles.paragraphblue
+          }>
         Change code in the editor and watch it change on your phone! Save to get a shareable url.
       </Text>
     </View>
          <View style={styles.container}>
-      <Text style={styles.paragraph}>
+      <Text style={
+              // Argument -- Inside of a Style Tag
+            number === 1
+              ? styles.paragraph
+              : number === 2
+              ? styles.paragraphred
+              : styles.paragraphgreen
+          }>
         Change code in the editor and watch it change on your phone! Save to get a shareable url.
       </Text>
     </View>
@@ -68,13 +89,6 @@ export default App;
 //Styling -- Like CSS starts here.
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: 'blue',
-    padding: 8,
-  },
-
-  containergreen: {
     flex: 1,
     justifyContent: 'center',
     backgroundColor: 'blue',
@@ -107,6 +121,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'green',
+  },
+
+  paragraphblue: {
+    margin: 24,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'blue',
   },
 
   paragraph2: {
