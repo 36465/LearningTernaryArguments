@@ -46,32 +46,62 @@ const App = () => {
             number === 1
               ? styles.paragraph
               : number === 2
-              ? styles.paragraphred
-              : styles.paragraphgreen
+              ? styles.paragraphbrown
+              : styles.paragraphwhite
           }>
         Change code in the editor and watch it change on your phone! Save to get a shareable url.
       </Text>
     </View>
-     <View style={styles.container2}>
+    {number === 3 ? <View style={styles.container2}>
+      <Text style={
+              // Argument -- Inside of a Style Tag
+            number === 3
+              ? styles.paragraph
+              : number === 2
+          }>
+        Change code in the editor and watch it change on your phone! Save to get a shareable url.
+      </Text>
+    </View>: null}
+    {number === 3 ? <View style={styles.container}>
+      <Text style={
+              // Argument -- Inside of a Style Tag
+            number === 3
+              ? styles.paragraph
+              : number === 2
+          }>
+        Change code in the editor and watch it change on your phone! Save to get a shareable url.
+      </Text>
+    </View>: null}
+    <View style={styles.container2}>
       <Text style={
               // Argument -- Inside of a Style Tag
             number === 1
               ? styles.paragraph
               : number === 2
-              ? styles.paragraphblue
-              : styles.paragraphblue
+              ? styles.paragraphpurple
+              : styles.paragraphbrown
           }>
         Change code in the editor and watch it change on your phone! Save to get a shareable url.
       </Text>
     </View>
+     {number === 2 ? <View style={styles.container3}>
+      <Text style={
+              // Argument -- Inside of a Style Tag
+            number === 2
+              ? styles.paragraph
+              : number === 2
+          }>
+        Change code in the editor and watch it change on your phone! Save to get a shareable url.
+      </Text>
+    </View>: null}
          <View style={styles.container}>
       <Text style={
               // Argument -- Inside of a Style Tag
             number === 1
               ? styles.paragraph
               : number === 2
-              ? styles.paragraphred
-              : styles.paragraphgreen
+              ? styles.paragraphwhite
+              : styles.paragraphyellow
           }>
         Change code in the editor and watch it change on your phone! Save to get a shareable url.
       </Text>
@@ -102,6 +132,13 @@ const styles = StyleSheet.create({
     padding: 8,
   },
 
+  container3: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: 'brown',
+    padding: 8,
+  },
+
   paragraph: {
     margin: 24,
     fontSize: 18,
@@ -129,6 +166,38 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'blue',
+  },
+
+  paragraphyellow: {
+    margin: 24,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'yellow',
+  },
+
+  paragraphpurple: {
+    margin: 24,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'purple',
+  },
+
+  paragraphwhite: {
+    margin: 24,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'white',
+  },
+
+  paragraphbrown: {
+    margin: 24,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'brown',
   },
 
   paragraph2: {
